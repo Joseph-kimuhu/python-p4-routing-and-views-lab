@@ -2,11 +2,7 @@ import io
 import sys
 import os
 
-# Add server directory to Python path
-server_dir = os.path.join(os.path.dirname(os.path.dirname(__file__)))
-sys.path.insert(0, server_dir)
-
-from app import app
+from server.app import app
 
 class TestApp:
     '''Flask application in flask_app.py'''
